@@ -23,3 +23,15 @@ ENegation >> evaluate [
 ENegation >> expression: anExpression [ 
 	expression := anExpression
 ]
+
+{ #category : 'instance creation' }
+ENegation >> negated [
+	^ expression
+]
+
+{ #category : 'printing' }
+ENegation >> printOn: aStream [
+	aStream 
+		nextPutAll: '- '.
+		expression printOn: aStream
+]
