@@ -26,11 +26,6 @@ EAddition >> left: anEConstant [
 ]
 
 { #category : 'accessing' }
-EAddition >> negated [
-	^ ENegation new expression: self
-]
-
-{ #category : 'accessing' }
 EAddition >> right: anEConstant [ 
 	right := anEConstant
 ]

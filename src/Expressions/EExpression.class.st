@@ -4,3 +4,8 @@ Class {
 	#category : 'Expressions',
 	#package : 'Expressions'
 }
+
+{ #category : 'instance creation' }
+EExpression >> negated [
+	^ ENegation new expression: self
+]
