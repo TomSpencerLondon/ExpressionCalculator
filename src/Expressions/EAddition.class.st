@@ -1,10 +1,6 @@
 Class {
 	#name : 'EAddition',
-	#superclass : 'EExpression',
-	#instVars : [
-		'right',
-		'left'
-	],
+	#superclass : 'EBinaryExpression',
 	#category : 'Expressions',
 	#package : 'Expressions'
 }
@@ -26,11 +22,6 @@ EAddition >> expression: anEAddition [
 ]
 
 { #category : 'accessing' }
-EAddition >> left: anEConstant [ 
-	left := anEConstant
-]
-
-{ #category : 'accessing' }
-EAddition >> right: anEConstant [ 
-	right := anEConstant
+EAddition >> negated [
+	^ ENegation new expression: self
 ]

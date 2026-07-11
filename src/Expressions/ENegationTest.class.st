@@ -36,3 +36,8 @@ ENegationTest >> testNegatedStructureIsCorrect [
 ENegationTest >> testNegationNegated [
 	self assert: (EConstant new value: 6) negated negated evaluate equals: 6
 ]
+
+{ #category : 'tests' }
+ENegationTest >> testNegationOnMinus [
+	self assert: (EConstant new value: -6) negated evaluate equals: 6
+]

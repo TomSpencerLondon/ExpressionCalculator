@@ -1,10 +1,6 @@
 Class {
 	#name : 'EMultiplication',
-	#superclass : 'EExpression',
-	#instVars : [
-		'right',
-		'left'
-	],
+	#superclass : 'EBinaryExpression',
 	#category : 'Expressions',
 	#package : 'Expressions'
 }
@@ -29,11 +25,6 @@ EMultiplication >> evaluate [
 ]
 
 { #category : 'accessing' }
-EMultiplication >> left: anEConstant [ 
-	left := anEConstant
-]
-
-{ #category : 'accessing' }
-EMultiplication >> right: anEConstant [ 
-	right := anEConstant
+EMultiplication >> negated [
+	^ ENegation new expression: self
 ]

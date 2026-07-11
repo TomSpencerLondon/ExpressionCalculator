@@ -1,0 +1,20 @@
+Class {
+	#name : 'EBinaryExpression',
+	#superclass : 'Object',
+	#instVars : [
+		'right',
+		'left'
+	],
+	#category : 'Expressions',
+	#package : 'Expressions'
+}
+
+{ #category : 'accessing' }
+EBinaryExpression >> left: anEConstant [ 
+	left := anEConstant
+]
+
+{ #category : 'accessing' }
+EBinaryExpression >> right: anEConstant [ 
+	right := anEConstant
+]
