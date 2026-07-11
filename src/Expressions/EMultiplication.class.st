@@ -20,6 +20,11 @@ EMultiplication >> left: anEConstant [
 ]
 
 { #category : 'accessing' }
+EMultiplication >> negated [
+	^ ENegation new expression: self
+]
+
+{ #category : 'accessing' }
 EMultiplication >> right: anEConstant [ 
 	right := anEConstant
 ]
