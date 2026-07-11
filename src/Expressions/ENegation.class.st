@@ -9,6 +9,11 @@ Class {
 }
 
 { #category : 'instance creation' }
+ENegation class >> expression: anExpression [
+	^ ENegation new expression: anExpression 
+]
+
+{ #category : 'instance creation' }
 ENegation >> evaluate [
 
 	^ expression evaluate negated
