@@ -14,6 +14,12 @@ EConstant >> evaluate [
 ]
 
 { #category : 'accessing' }
-EConstant >> value: anInteger [ 
+EConstant >> negated [
+	^ ENegation new expression: self
+]
+
+{ #category : 'accessing' }
+EConstant >> value: anInteger [
+
 	value := anInteger
 ]
