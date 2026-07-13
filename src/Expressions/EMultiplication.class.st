@@ -28,3 +28,9 @@ EMultiplication >> evaluate [
 EMultiplication >> negated [
 	^ ENegation new expression: self
 ]
+
+{ #category : 'as yet unclassified' }
+EMultiplication >> operatorString [
+
+	^ ' * '
+]

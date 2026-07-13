@@ -25,3 +25,9 @@ EAddition >> expression: anEAddition [
 EAddition >> negated [
 	^ ENegation new expression: self
 ]
+
+{ #category : 'as yet unclassified' }
+EAddition >> operatorString [
+
+	^ ' + '
+]
