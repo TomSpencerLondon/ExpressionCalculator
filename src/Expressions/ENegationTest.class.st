@@ -52,6 +52,13 @@ ENegationTest >> testNegationNegated [
 ]
 
 { #category : 'tests' }
+ENegationTest >> testNegationOfVariable [
+	| expr |
+	expr := ENegation new expression: (EVariable new id: #x).
+	self assert: (expr evaluateWith: { #x -> 10 } asDictionary) equals: -10 
+]
+
+{ #category : 'tests' }
 ENegationTest >> testNegationOnMinus [
 
 	self
