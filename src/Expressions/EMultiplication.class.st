@@ -20,8 +20,10 @@ EMultiplication class >> left: anExp right: anExp2 [
 ]
 
 { #category : 'accessing' }
-EMultiplication >> evaluate [
-	^ left evaluate * right evaluate
+EMultiplication >> evaluateWith: aDictionary [
+
+	^ (left evaluateWith: aDictionary)
+	  * (right evaluateWith: aDictionary)
 ]
 
 { #category : 'accessing' }

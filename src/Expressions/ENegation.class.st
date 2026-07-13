@@ -14,9 +14,9 @@ ENegation class >> expression: anExpression [
 ]
 
 { #category : 'instance creation' }
-ENegation >> evaluate [
+ENegation >> evaluateWith: aDictionary [
 
-	^ expression evaluate negated
+	^ (expression evaluateWith: Dictionary new) negated
 ]
 
 { #category : 'instance creation' }
